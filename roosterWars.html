@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>rooster wars2</title>
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/mohammad.jpg"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Mohammad Shahriari</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Intro </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About Me</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Intro </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About Me</a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Rooster Wars 2</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Rooster Wars 2 is a turn-based strategy idle RPG (and lots of other fancy sub-genre names)
+            inspired by the game "Mighty Party" by <a href="https://panoramikgames.com/"><u>Panoramik</u></a>.
+          </p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="#" class="btn btn--bg" target="_blank">Google Play</a>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="#" class="btn btn--bg" target="_blank">Play Store</a>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a href="https://cafebazaar.ir/app/com.Medrick.RoosterWars2?l=en" class="btn btn--bg" target="_blank">Cafe Bazaar</a>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/rooster-wars2.png"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+                The first <a href="https://cafebazaar.ir/app/org.medrik.roosterwars?l=en"><u>Rooster Wars</u></a> game, 
+                was a greate success in Iran's local mobile game markets with over than 500k users.
+                After about 7 years from the first game(which I wasn't a part of it's dev team), 
+                we started working on Rooster Wars 2 <strong>mobile game</strong> 
+                at <a href="http://medrickfze.com/"><u><strong>Medrick Games</strong></u></a>. 
+              </p>
+              <p class="project-details__desc-para">
+                I've been chosen as the <strong>tech-lead</strong> of the project. At the begining and in the prototype phase,
+                I started to design the overall architecture.
+                I have chosen <a href="https://github.com/modesttree/Zenject"><u><strong>Zenject</strong></u></a>
+                as the dependecy injection framework and the back-bone of the code-base.
+              </p>
+              <p class="project-details__desc-para">
+                For the server-side, we used <a href="https://heroiclabs.com/"><u><strong>Nakama</strong></u></a>.
+                Nakama saved us a lot of time at the begining. We didn't have to write the back-end code for player management 
+                and all these stuff. Besides, Nakama provides an interface for developers so they can extend the server's functionality 
+                by adding custom modules. We are currently using lot's of features provided by Nakama like 
+                groups, chats, storgae objects, leaderboards and... . We also extended Nakama's basic functionality 
+                with thousends of lines of back-end codes(typeScript).<br>
+                Besides of it's benefits, Nakama(and generally, every other pre-built servers) bring it's own limits 
+                in comparission to a server app that you are developing from scratch. </br>
+                Anyways, Nakama stayed in our project and currently is being used as our back-end application.
+              </p>
+              <div class="project-details__showcase-img-cont">
+                <img
+                  src="./assets/rooster-squad.png"
+                  alt="Project Image"
+                  class="project-details__showcase-img"
+                />
+              </div>
+              <p class="project-details__desc-para">
+                The game is being played like this:
+                <br>
+                You will choose a deck of cards(heroes) plus a warlord(the boss of your team) and enter a match.
+                In your turn, you will place one of your cards on one of the available cells of the game field.
+                After that, your input will be locked, and all your "deployed" characters (the one you played this turn and turns before)
+                start attacking. After each character attack ends, the turn will change. The match will be ended if one team's warlord dies.
+                <br>
+                You are playing against another user's profile which is given to you by the matchmaking system.
+                Your opponent is not actually playing and no, the game is not real-time. You play agaisnt AI.
+                Although we where thinking about a <strong>Mini-Max</strong> algorithm or something like that, 
+                we end up with a <strong>greedy</strong> AI, which actually plays really good!
+                <br>
+                At the time of writing these sentences, the game has more than 100 unique heroes.
+                Beside their art, heroes has their own stats and <strong>skills</strong>.
+                There are about 40 unique skill in the game - which I call them <strong>Base Skills</strong>.
+                Each hero has a number of base skills, with it's own conditions, which determines how and when the skill 
+                will be triggered and how the skill affects the heroes on the field, or generally, the game state.
+                <br>
+                I am aware about <strong>event-based</strong> architectures and it's limits, 
+                but for the sake of speed, I have designed a <strong>gameplay system</strong> with an <strong>event system</strong>
+                in it's core. 
+                There are events and event-listeners. We have events for every important thing that will happen during the gameplay.
+                Like when a hero gets deployed, when a hero attack or when a hero gets healed.
+                Listeners will(obviusly) listen to these events and they will do an action based on some conditions!
+                <br>
+                In this system, skills are event listeners. Consider a hero with <strong>Heal</strong> skill.
+                Let's say this skill is described like this:<br>
+                "When an ally hero deployed, heals all allies in it's column".<br>
+                This skill will be triggered when a "Hero Deployed" event is fired. Then it will check the even's parameters 
+                to check if the deplyed hero is an ally. Then if all the consitions are satisfied, the "Heal Skill" will get all the 
+                ally heroes with it's same column (consider a grid-based game field) and heals them with the determined value.
+                <br>
+                I have also followed <strong>unit testing</strong> and practices of <strong>TDD</strong> 
+                for some parts of the project. e.g: skill system.
+              </p>
+              <div class="project-details__showcase-img-cont">
+                <img
+                  src="./assets/rooster-gameField.png"
+                  alt="Project Image"
+                  class="project-details__showcase-img"
+                />
+              </div>
+              <p class="project-details__desc-para">
+                Above paragraphs was the boldest things I wanted to mention. But we developed lots of interesting features 
+                which I can write about them in like 10 more pages! Thing like:
+                - implementing <strong>analytics</strong> SDKs (Adjust, Flurry, Firebase, Crashlytics)<br>
+                - conditional <strong>special offers</strong> customized for different types of players, based on their purchase patterns 
+                and their progression in the game.
+                - liveops game modes like <strong>season pass</strong>.
+                - ...
+              </p>
+              <p class="project-details__desc-para">
+                At the time of writing this portfolio, we are 4 developers working on the game.
+                Three client developers and one back-end guy.
+                <br>
+                The game is currently published for android devices in the local market. The international and the IOS versions 
+                are being developed and will be published soon.
+              </p>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools/Things to Mention</h3>
+              <div class="skills">
+                <div class="skills__skill">Unity</div>
+                <div class="skills__skill">C#</div>
+                <div class="skills__skill">Nakama</div>
+                <div class="skills__skill">Zenject</div>
+                <div class="skills__skill">Addressable Assets</div>
+                <div class="skills__skill">Unity Localization</div>
+                <div class="skills__skill">TDD</div>
+                <div class="skills__skill">Git</div>
+                <div class="skills__skill">Spine</div>
+                <div class="skills__skill">Android</div>
+                <div class="skills__skill">IOS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <h3>I'm not a social-person though...</h3>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mohshah/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="http://itch.io/mohshah">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/itch.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/mohammadshahriariii">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://t.me/mohammad.shahriari">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/telegram.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Footer</h4>
+            <p class="main-footer__short-desc">
+              Well, what should I write here? I just wrote everything I wanted in the top sections.
+              Maybe someday I fill-up this blank section too.
+            </p>
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Thanks to this guy:
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+          for sharing this cool open-source project.
+        </div>
+      </div>
+    </footer>
+    
+    <script src="./index.js"></script>
+  </body>
+</html>
