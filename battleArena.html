@@ -83,7 +83,7 @@
             An original <strong>online</strong> <strong>PvP</strong> game, inspired from 
             <strong><a href="https://play.google.com/store/apps/details?id=com.habby.archero&hl=en&gl=US"><u>Archero</u></a></strong> 
             in it's core mechanics,
-            but with a totally different (and in my mind, more better) experince.
+            but with a totally different and more hard-core experince.
           </p>
         </div>
         <!--no btn... sorry-->
@@ -106,7 +106,20 @@
                 At Part Games, we all were in love with <strong>MOBA</strong> games, each with thousands of hours of playtime in <strong>DOTA 2</strong> and 
                 <strong>League of Legends</strong>. Our ultimate wish was to create a MOBA game for PC. 
                 As our first step towards that dream, we started to develop <strong>Battle Arena</strong> game.<br>
-
+                In Part Games studio, we have made online multiplayer games before this project. But the main difference was that 
+                Battle Arana was a fast-paced game. Meaning that we couldn't simply use <strong>REST</strong> APIs or <strong>Socket</strong> 
+                connection. We had to use <strong>UDP</strong> for our in-game communication.<br>
+                Our core client-server architecture, in a very abstract level was like this: <br>
+                - Game client, communicating with server applications.<br>
+                - User Management server app, wriiten with <strong>ASP.NET Core</strong>, responsible to manage user acoount, CRUD on database,etc.<br>
+                - Matchmaking sevrer, which was actually a part of user management server, but responsible to establish a <strong>Web Socket</strong> 
+                connection with clients, so that it can notify them when they get matched with another player.<br>
+                - Game server, which was using <strong>UDP</strong> protocol to handle in-game communication between players.
+                <br>
+                <br>
+                The core-game was <strong>Server Authorative</strong>, so for every running match (containing 2 players), 
+                there was a head-less instance running on in the server. We haven't used <strong>Photon</strong> or <strong>Mirror</strong> 
+                or frameworks like them. We wrote the game server in c# our selves.
               </p>
           
               
