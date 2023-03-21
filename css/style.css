@@ -64,8 +64,8 @@ textarea {
 
 .heading-primary {
   font-size: 4rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+  
+  letter-spacing: 1px;
   text-align: center; }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
@@ -232,7 +232,8 @@ textarea {
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 90rem;
-    width: 92%; }
+    width: 92%; 
+    }
     @media only screen and (max-width: 37.5em) {
       .home-hero__content {
         padding: 19rem 0 13rem 0;
@@ -292,6 +293,8 @@ textarea {
     margin-bottom: 0; }
   .projects__row-img-cont {
     overflow: hidden; }
+  .projects__intro-img {
+    border-radius: 50%; }
   .projects__row-img {
     width: 100%;
     display: block;
