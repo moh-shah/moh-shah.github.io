@@ -111,15 +111,30 @@
                 connection. We had to use <strong>UDP</strong> for our in-game communication.<br>
                 Our core client-server architecture, in a very abstract level was like this: <br>
                 - Game client, communicating with server applications.<br>
-                - User Management server app, wriiten with <strong>ASP.NET Core</strong>, responsible to manage user acoount, CRUD on database,etc.<br>
+                - User Management server app, wriiten with <strong>ASP.NET Core</strong>, responsible to manage user acoount, CRUD on the 
+                database <strong>MongoDB</strong>,etc.<br>
                 - Matchmaking sevrer, which was actually a part of user management server, but responsible to establish a <strong>Web Socket</strong> 
                 connection with clients, so that it can notify them when they get matched with another player.<br>
                 - Game server, which was using <strong>UDP</strong> protocol to handle in-game communication between players.
                 <br>
                 <br>
-                The core-game was <strong>Server Authorative</strong>, so for every running match (containing 2 players), 
-                there was a head-less instance running on in the server. We haven't used <strong>Photon</strong> or <strong>Mirror</strong> 
-                or frameworks like them. We wrote the game server in c# our selves.
+                At the early days of the project, we started a R&D about <strong>UDP</strong> protocol and how to develop a UDP server.
+                Our decision was to use the <strong>Server Authorative</strong> archihtecture. So every single match (containing 2 players) had to have a heade-less 
+                version running on the server. We haven't used <strong>Photon</strong> or <strong>Mirror</strong> 
+                or frameworks like them. We wrote the game server in c# ourselves. We developed the game server as a C# console app.
+                <br>
+                Another important part was the AI, as we didn't want the players to stay in the matchmaking queue forever, 
+                waiting for a same-level opponent. 
+                <strong><a href="https://www.linkedin.com/in/sadradelir/"><u>Sadra</u></a></strong>,
+                our tech-lead, combined <strong>re-inforcement learning</strong> with <strong>genetic algorithm</strong> to train an AI agent 
+                wich was actually very cool and challenging to play with.
+                <br>
+                Our beloved project was canceled in after beta release due to our studio's bad econimical situations...
+                <br>
+                Take a look at these videos which was taken by <strong><a href="https://sites.google.com/view/omidizadi"><u>Sadra</u></a></strong>, 
+                our technical artists and client developer, at the early phases of development:
+                <strong><a href="https://www.youtube.com/watch?v=JFNc7w4QvtQ"><u>video 1</u></a></strong>
+                <strong><a href="https://www.youtube.com/watch?v=8GnuSPcfBiQ&feature=youtu.be"><u>video 2</u></a></strong>
               </p>
           
               
