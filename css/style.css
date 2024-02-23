@@ -721,3 +721,9 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+    .hyper-link-color {
+      color: #2e91e7;
+      background-color: transparent;
+      text-decoration: none;
+    }
