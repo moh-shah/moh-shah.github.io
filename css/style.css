@@ -276,11 +276,20 @@ textarea {
       .about__content-details-para:last-child {
         margin-bottom: 4rem; }
 
-.projects__row {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-gap: 5rem;
-  margin-bottom: 11rem; }
+        .projects__item {
+          flex: 1 1 calc(50% - 20px); /* Adjust as needed */
+          margin: 10px; /* Adjust as needed */
+          box-sizing: border-box;
+        }
+
+        .projects__row {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: flex-start; 
+
+          margin-bottom: 20px; /* Adjust as needed */
+        }
   @media only screen and (max-width: 56.25em) {
     .projects__row {
       grid-template-columns: 1fr;
@@ -292,7 +301,8 @@ textarea {
   .projects__row:last-child {
     margin-bottom: 0; }
   .projects__row-img-cont {
-    overflow: hidden; }
+    overflow: hidden; 
+    margin-bottom: 10px;}
   .projects__intro-img {
     border-radius: 50%; }
   .projects__row-img {
@@ -300,6 +310,7 @@ textarea {
     display: block;
     object-fit: cover; }
   .projects__row-content {
+    margin-bottom: 10px;
     padding: 2rem 0;
     display: flex;
     justify-content: center;
@@ -307,11 +318,18 @@ textarea {
     align-items: flex-start; }
     @media only screen and (max-width: 56.25em) {
       .projects__row-content {
-        align-items: center; } }
+        align-items: center;
+        flex-direction: column; } 
+      
+        .projects__item {
+          flex: 1 1 100%;
+          margin: 10px 0; /* Adjust as needed */
+        }
+      }
     .projects__row-content-title {
       font-weight: 700;
       font-size: 2.8rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 0rem; }
       @media only screen and (max-width: 37.5em) {
         .projects__row-content-title {
           font-size: 2.4rem; } }
@@ -727,3 +745,34 @@ textarea {
       background-color: transparent;
       text-decoration: none;
     }
+
+    /* New CSS for single project row */
+.projects__row.single-project {
+  flex-wrap: nowrap;
+}
+
+.projects__row.single-project .projects__item {
+  flex: 1 1 100%;
+  margin: 0; /* Adjust as needed */
+  display: flex;
+  flex-direction: row;
+}
+
+.projects__row.single-project .projects__row-img-cont,
+.projects__row.single-project .projects__row-content {
+  flex: 1;
+  margin: 0 10px; /* Adjust as needed */
+}
+
+@media only screen and (max-width: 56.25em) {
+  .projects__row.single-project {
+    flex-direction: column;
+  }
+  .projects__row.single-project .projects__item {
+    flex-direction: column;
+  }
+  .projects__row.single-project .projects__row-img-cont,
+  .projects__row.single-project .projects__row-content {
+    margin: 10px 0; /* Adjust as needed */
+  }
+}
