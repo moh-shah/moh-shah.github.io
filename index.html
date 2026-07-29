@@ -1,695 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>M.Shahriari</title>
-    <meta name="description" content="Mohammad's' Portfolio" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mohshah portfolio</title>
+  <meta name="description" content="Portfolio of Mohammad Shahriari, co-founder of Zimo games and a technical lead." />
 
-    <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <link rel = "icon" href = "assets/png/mohammad.jpg" type = "image/x-icon">
-  <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="./assets/png/mohammad.jpg"
-              alt="Moh Shahriari Logo Image"
-              class="header__logo-img"
-            />
-          </div>
-          <span class="header__logo-sub">Mohammad Shahriari | Co-Founder • Software Engineer • Technical Lead</span>
-        </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html#intro" class="header__link">Intro</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">Projects</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#articles" class="header__link">Articles</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#education" class="header__link">Education & Skills</a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="eyebrow">Mohammad Shahriari / Intro</span>
+        <h1 class="hero-title">Engineering Games. Leading Teams. Building Products.</h1>
+        <p class="hero-lede">
+          Software engineer, Unity developer, and studio co-founder passionate about building engaging mobile games, scalable software architectures, and high-performing development teams.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">View Work</a>
+          <a class="btn" href="#contact">Get in Touch</a>
+          <a class="btn" href="assets/Resume-Mohammad Shahriari.pdf" download>Download Resume ↓</a>
         </div>
       </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html#intro">Intro </a>
-            </li>
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects">Projects </a>
-            </li>
-            <li class="header__sm-menu-link">
-              <a href="./index.html#articles">Articles</a>
-            </li>
-            <li class="header__sm-menu-link">
-              <a href="./index.html#education"> Education & Skills </a>
-            </li>
-          </ul>
-        </div>
+
+      <div class="console" id="status-console" aria-label="Project status overview">
+        <!-- populated by assets/js/main.js from projects.js -->
       </div>
-    </header>
-    <section class="home-hero">
-      <div class="home-hero__content">
-         
-        <div class="home-hero__info">
-          <p class="text-primary">
-            <img src="./assets/png/mohammad.jpg" class = "projects__intro-img" width="200" height="200" alt= "Software Screenshot" loading="lazy" id="intro" />
-            <br>
-            <p class="paragraph_1">
-              Since I can remember, I've been passionate about video games. My journey in game development began in 2015, initially beyond programming, before transitioning into software engineering in 2018.<br>
-              I've worked across both client-side and backend development, primarily with <b>Unity</b>, <b>C#</b>, and <b>.NET</b>. Today, I'm the co-founder and Studio Director of <b>Zimo Games</b>, where I combine technical leadership with product development, publisher relations, and team management.<br>
-              <br>
-              As an engineer, I'm passionate about building readable, maintainable, and scalable software architectures. I enjoy designing gameplay systems from the ground up, solving challenging technical problems, and creating tools that improve development workflows.<br>
-              I'm a strong believer in continuous learning and constantly explore new technologies, engineering practices, and design approaches. I'm particularly interested in multiplayer networking, game architecture, procedural generation, and complex gameplay systems.<br>
-              While I find joy in diverse gaming experiences, I have a particular fondness for Rogue-like, Metroidvania, and MOBA genres.
-            </p>
-            <br> 
-            <p class="paragraph_2">       
-            <br>
-            <a
-                href="./assets/Resume-Mohammad Shahriari.pdf"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Download Resume</a
-              >
-              <br>   <br>
-              Get in touch with me: <a href="mailto:moh.shah96@gmail.com"> <strong>moh.shah96@gmail.com</strong></a>
-            </p>
-          </p>
-        </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title">Projects & Experience</h2>
+        <p class="section-sub">A selection of the games, products, and teams I've contributed to throughout my career—from indie projects and startups to live mobile games.</p>
       </div>
-      <div class="home-hero__socials">
-        <div class="home-hero__social">
-          <a href="https://www.linkedin.com/in/mohshah/" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/linkedin-ico.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="mailto:moh.shah96@gmail.com" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/gmail.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
-        <div class="home-hero__social">
-          <a href="https://medium.com/@mo-shah" class="home-hero__social-icon-link">
-            <img
-              src="./assets/png/medium.png"
-              alt="icon"
-              class="home-hero__social-icon"
-            />
-          </a>
-        </div>
+      <div class="project-grid" id="project-grid">
+        <!-- populated by assets/js/main.js -->
       </div>
-     
-    </section>
+    </div>
+  </section>
 
-
-    <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-        </h2>
-        <div class="projects__content">
-          
-
-
-          <div class="projects__row single-project">
-            <div class="projects__row-img-cont">
-              <img
-              src="./assets/zimo_1.jpg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Zimo Games</h3>
-              <p class="projects__row-content-desc">
-                Co-founded Zimo Games to develop hybrid-casual and mid-core mobile games. 
-                Besides leading technical development, I oversee publisher relations, investor communications, hiring, production pipelines, 
-                and overall studio management while helping shape new game concepts and mechanics.
-              </p>
-              <a
-                href="./zimoGames.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >More Details</a
-              >
-            </div>
-          </div>
-
-
-           <div class="projects__row single-project">
-            <div class="projects__row-img-cont">
-              <img
-              src="./assets/upside_1.jpg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Upside Down</h3>
-              <p class="projects__row-content-desc">
-                Story-driven hybrid-casual mobile game developed as our first project in <strong>Zimo Games</strong>. 
-                I led the technical development and team management, while coordinating directly with the publisher, <strong>Supercent</strong>, throughout five iterations, eventually reaching <strong>soft launch</strong>.
-              </p>
-              <a
-                href="./upsideDown.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >More Details</a
-              >
-            </div>
-          </div>
-
-
-          <div class="projects__row single-project">
-            <div class="projects__row-img-cont">
-              <img
-              src="./assets/rooster-wars2.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Versus</h3>
-              <p class="projects__row-content-desc">
-                <strong>Tech lead</strong> of a 4 developer tech team, for this online turn-based PvP strategy idle RPG.
-                Have been in the team since the very begining and experienced all the development phases, from ideation and prototyping
-                to alhpa/beta/golden version releases. And then maintanance phase, adding live-ops events and improving the game
-                according to the data gathered using <b>analytics tools</b>, running <b>A/B tests</b> and publishing regular updates.
-              </p>
-              <a
-                href="./versus.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >More Details</a
-              >
-            </div>
-          </div>
-
-          <div class="projects__row">
-            
-          <div class="projects__item">
-              <div class="projects__row-content">
-                <div class="projects__row-img-cont">
-                  <img
-                    src="./assets/mint_1.jpg"
-                    alt="Software Screenshot"
-                    class="projects__row-img"
-                    loading="lazy"
-                  />
-                </div>
-                <h3 class="projects__row-content-title">Mint Heroes</h3>
-                <p class="projects__row-content-desc">
-                Outsourced prototype for Ared Game Studio targeting <strong>Voodoo</strong> CPI testing. I led the engineering efforts.
-                </p>
-                <a
-                  href="./mintHeroes.html"
-                  class="btn btn--med btn--theme dynamicBgClr"
-                  target="_blank"
-                  >More Details</a
-                >
-              </div>
-            </div>
-
-            <div class="projects__item">
-              <div class="projects__row-content">
-                <div class="projects__row-img-cont">
-                  <img
-                    src="./assets/matchroom_1.jpg"
-                    alt="Software Screenshot"
-                    class="projects__row-img"
-                    loading="lazy"
-                  />
-                </div>
-                <h3 class="projects__row-content-title">Match Room</h3>
-                <p class="projects__row-content-desc">
-                  No! It's not a dating app :D </br>Full-stack competition platform consisting of a Unity mobile application, ASP.NET Core backend, and MySQL database for corporate knowledge competitions.
-                </p>
-                <a
-                  href="./matchRoom.html"
-                  class="btn btn--med btn--theme dynamicBgClr"
-                  target="_blank"
-                  >More Details</a
-                >
-              </div>
-            </div>
-            
-          </div>
-
-
-
-          <div class="projects__row">
-            <div class="projects__item">
-              <div class="projects__row-img-cont">
-                <img
-                  src="./assets/liveops.png"
-                  alt="Project 1 Screenshot"
-                  class="projects__row-img"
-                  loading="lazy"
-                />
-              </div>
-              <div class="projects__row-content">
-                <h3 class="projects__row-content-title">In-House LiveOps Infrastructure</h3>
-                <p class="projects__row-content-desc">
-                  As a client developer (Unity), participated in the <b>architectural design</b> 
-                  and responsible for the implementation of our in-house live-ops management system's client-side. 
-                  Following <b>TDD</b> practices from the beginning, the product has been developed as a <b>Unity package</b>
-                  and deployed on our internal custom <a href="https://docs.unity3d.com/2021.3/Documentation/Manual/upm-scoped.html" class="hyper-link-color">package registry</a>.
-                </p>
-                <a
-                  href="./liveops.html"
-                  class="btn btn--med btn--theme dynamicBgClr"
-                  target="_blank"
-                  >More Details</a
-                >
-              </div>
-            </div>
-
-             <div class="projects__item">
-              <div class="projects__row-img-cont">
-                <img
-                  src="./assets/hokm-plus.png"
-                  alt="Project 1 Screenshot"
-                  class="projects__row-img"
-                  loading="lazy"
-                />
-              </div>
-              <div class="projects__row-content">
-                <h3 class="projects__row-content-title">Court piece / Shelem</h3>
-                <p class="projects__row-content-desc">
-                  Client developer(Unity), in these two turn-based online PvP card games with the simillar infrastructure in terms of technical stuff, but different themes, art assets and mechanics. Took the responsibility in the maintanance phase to add live-ops events, debug occasional bugs and build new versions.
-                </p>
-                <a
-                  href="./courtPiece.html"
-                  class="btn btn--med btn--theme dynamicBgClr"
-                  target="_blank"
-                  >More Details</a
-                >
-              </div>
-            </div>
-            
-          </div>
-
-<!--new row-->
-          <div class="projects__row">
-            <div class="projects__item">
-              <div class="projects__row-img-cont">
-                <img
-                  src="./assets/heshmat.png"
-                  alt="Project 1 Screenshot"
-                  class="projects__row-img"
-                  loading="lazy"
-                />
-              </div>
-              <div class="projects__row-content">
-                <h3 class="projects__row-content-title">Heshmat / Babashah</h3>
-                <p class="projects__row-content-desc">
-                  Responsible for the maintanance, adding live-ops events and publishing reqular updates for these 2 -same in codebase but diferent in meta games and graphisc- games.
-                </p>
-                <a
-                  href="./solitare.html"
-                  class="btn btn--med btn--theme dynamicBgClr"
-                  target="_blank"
-                  >More Details</a
-                >
-              </div>
-            </div>
-
-            <div class="projects__item">
-              <div class="projects__row-img-cont">
-                <img
-                  src="./assets/golshifteh.png"
-                  alt="Project 2 Screenshot"
-                  class="projects__row-img"
-                  loading="lazy"
-                />
-              </div>
-              <div class="projects__row-content">
-                <h3 class="projects__row-content-title">Golshifteh</h3>
-                <p class="projects__row-content-desc">
-                  Joined the team as a client developer(Unity), implemented chat and meta social features for this match-3 game (simillar to Homescapes).
-                </p>
-                <a
-                  href="./golshifteh.html"
-                  class="btn btn--med btn--theme dynamicBgClr"
-                  target="_blank"
-                  >More Details</a
-                >
-              </div>
-            </div>
-            
-          </div>
-
-
-
-           <div class="projects__row">
-            
-
-            <div class="projects__item">
-              <div class="projects__row-content">
-                <div class="projects__row-img-cont">
-                  <img
-                    src="./assets/battleArena.png"
-                    alt="Software Screenshot"
-                    class="projects__row-img"
-                    loading="lazy"
-                  />
-                </div>
-                <h3 class="projects__row-content-title">Battle Arena</h3>
-                <p class="projects__row-content-desc">
-                  Responsible to develop and maintain the player-management server application for our real-time pvp game. 
-                  Used <strong>ASP.NET Core</strong>, <strong>MongoDB</strong> and <strong>Redis</strong>.
-                </p>
-                <a
-                  href="./battleArena.html"
-                  class="btn btn--med btn--theme dynamicBgClr"
-                  target="_blank"
-                  >More Details</a
-                >
-              </div>
-            </div>
-
-            <div class="projects__item">
-              <div class="projects__row-img-cont">
-                <img
-                  src="./assets/king-keyvaan.jpg"
-                  alt="Project 2 Screenshot"
-                  class="projects__row-img"
-                  loading="lazy"
-                />
-              </div>
-              <div class="projects__row-content">
-                <h3 class="projects__row-content-title">Shaah Keyvan</h3>
-                <p class="projects__row-content-desc">
-                  Responsible for design and implementation of a player management server application for our clicker mobile game. Used <b>C#</b> and <b>MongoDB</b>.
-                </p>
-                <a
-                  href="./kingKeyvaan.html"
-                  class="btn btn--med btn--theme dynamicBgClr"
-                  target="_blank"
-                  >More Details</a
-                >
-              </div>
-            </div>              
-          </div>
-
-          
-          <div class="projects__row">
-           
-          <div class="projects__item">
-              <div class="projects__row-img-cont">
-                <img
-                  src="./assets/gamein.jpg"
-                  alt="Software Screenshot"
-                  class="projects__row-img"
-                  loading="lazy"
-                />
-              </div>
-              <div class="projects__row-content">
-                <h3 class="projects__row-content-title">Game-In server app</h3>
-                <p class="projects__row-content-desc">
-                  A <b>socket-based</b> server application for a real-time simulation/management game, developed for a student event in 
-                  <a href="https://www.sharif.edu/en/web/ie/w/holding-the-5th-gaming-event-by-industrial-engineering-department-of-sharif-university-of-technology"><b class="hyper-link-color">Sharif university of technology</b></a> in Tehran. 
-                  Used <b>C#</b> web socket features.
-                </p>
-              </div>
-            </div>
-
-            <div class="projects__item">
-                <div class="projects__row-img-cont">
-                <img
-                  src="./assets/arabic-unlocked.jpg"
-                  alt="Software Screenshot"
-                  class="projects__row-img"
-                  loading="lazy"
-                />
-                </div>
-                <div class="projects__row-content">
-                <h3 class="projects__row-content-title">Arabic Unlocked middle server</h3>
-                <p class="projects__row-content-desc">
-                  Developed some back-end features (which we called them "middle-server") for an Arabic language learning app called 
-                  <a href="https://play.google.com/store/apps/details?id=com.utglobal.arabicunlocked"><b class="hyper-link-color">Arabic Unlocked</b></a>. Worked with <b>C#</b>,
-                  <b>.Net Core</b>, <b>MongoDB</b>, <b>Microsoft PlayFab</b>, <b>Active Campaign</b>, <b>Google's and Apple's</b> subscription APIs.
-                </p>
-                </div>
-              </div>
-            
-          </div>
-
-          <div class="projects__row">
-             <div class="projects__item">
-              <div class="projects__row-img-cont">
-                <img
-                  src="./assets/world-cup.jpg"
-                  alt="Project 1 Screenshot"
-                  class="projects__row-img"
-                  loading="lazy"
-                />
-              </div>
-              <div class="projects__row-content">
-                <h3 class="projects__row-content-title">World Cup 2022 Prediction App</h3>
-                <p class="projects__row-content-desc">
-                  A prediction app for fifa world cup in a contract with <a href="https://www.linkedin.com/company/mobile-communication-company-of-iran-mcci-/"><b class="hyper-link-color">MCI</b></a>. Developed the client-side app using <b>Unity</b> and it's WebGL.
-                </p>
-              </div>
-            </div>
-
-            <div class="projects__item">
-              <div class="projects__row-img-cont">
-                <img
-                  src="./assets/ghezi.jpg"
-                  alt="Project 2 Screenshot"
-                  class="projects__row-img"
-                  loading="lazy"
-                />
-              </div>
-              <div class="projects__row-content">
-                <h3 class="projects__row-content-title">Khaleh Ghezi server</h3>
-                <p class="projects__row-content-desc">
-                  In collaboration with <a href="https://www.linkedin.com/company/hurrah-games/about/"><b class="hyper-link-color">Hurrah games</b></a>, extended the server application of an educational and entertainment app for children called Khaleh Ghezi, based on the team's requirements to add new 
-                  APIs and features to their up and running server. Used <b>.Net</b> and <b>SQL Server</b>.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          
-           <div class="projects__row">
-            <div class="projects__item">
-              <div class="projects__row-img-cont">
-                <img
-                  src="./assets/sick-mind.jpg"
-                  alt="Project 1 Screenshot"
-                  class="projects__row-img"
-                  loading="lazy"
-                />
-              </div>
-              <div class="projects__row-content">
-                <h3 class="projects__row-content-title">Sick Mind</h3>
-                <p class="projects__row-content-desc">
-                  As my one and only experience as a Game designer, I had the opportunity to design levels, puzzles and in-game economy for this mobile puzzle game in TeeToTum studio.
-                 </p>
-              </div>
-            </div>
-
-            <div class="projects__item">
-              
-              <div class="projects__row-content">
-                 
-              </div>
-            </div>
-            
-          </div>
-
-
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap about-grid">
+      <div>
+        <div class="section-head">
+          <h2 class="section-title">About</h2>
         </div>
+        <p class="about-bio" id="about-bio"><!-- populated from SITE.bio --></p>
       </div>
-    </section>
-
-    <section id="articles" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Articles</span>
-          <a href="https://medium.com/@mo-shah/versus-how-we-took-our-offline-game-online-e07353f1cfc0"><h3 class="projects__row-content-title"><u>- Versus: How We Took Our Offline Game Online</u></h3></a>
-        </h2>
+      <div class="panel">
+        <div class="panel-label">TECH_STACK.LOG</div>
+        <div id="skills-panel"><!-- populated from SITE.skills --></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="education" class="about sec-pad">
-      <div class="main-container">
-        
-        <div class="about__content">
-          <div class="about__content-main">
-            <h3 class="about__content-title">Education</h3>
-            <div class="about__content-details">
-              <p class="about__content-details-para">
-                Bachelor's degree in <strong>software engineering</strong> at "IAU".
-              </p>
-              <p class="about__content-details-para">
-                <strong>Game Design</strong> course at Iran Game Development Institute.
-              </p>
-            </div>
-
-            <h3 class="about__content-title">Experiences</h3>
-            <div class="about__content-details">
-              <p class="about__content-details-para"> <strong>Zimo Games</strong>: Co-Founder, Studio Director </p>
-               <p class="about__content-details-para"> <strong>Medrick FZE</strong>: Senior Unity Developer, Technical Lead </p>
-                <p class="about__content-details-para"> <strong>Part Games Studio</strong>: Unity Developer, Backend Developer </p>
-                 <p class="about__content-details-para"> <strong>Teetotum</strong>: Game Design Intern </p>
-            </div>
-
-          </div>
-          <div class="about__content-skills">
-            <h3 class="about__content-title">Skills</h3>
-            <div class="skills">
-              <div class="skills__skill">Team Management</div>
-              <div class="skills__skill">Startup</div>
-
-              <div class="skills__skill">C#</div>
-              <div class="skills__skill">Unity</div>
-              <div class="skills__skill">Live Games</div>
-              <div class="skills__skill">F2P</div>
-              <div class="skills__skill">LiveOps</div>
-              <div class="skills__skill">Gameplay Programming</div>
-              <div class="skills__skill">Game Prototyping</div>
-              <div class="skills__skill">Performance Optimization</div>
-              <div class="skills__skill">Mobile Game Development</div>
-              <div class="skills__skill">Multiplayer Games</div>
-
-              <div class="skills__skill">Software Engineering</div>
-              <div class="skills__skill">Code Architecture</div>
-              <div class="skills__skill">System Design</div>
-              <div class="skills__skill">OOP</div>
-              <div class="skills__skill">SOLID</div>
-              <div class="skills__skill">Test Driven Development</div>
-
-              <div class="skills__skill">.Net Core</div>
-              <div class="skills__skill">Back-End</div>
-              <div class="skills__skill">MongoDb</div>
-
-              <div class="skills__skill">Git</div>
-              <div class="skills__skill">Git Flow</div>
-              <div class="skills__skill">Code Review</div>
-             
-              <div class="skills__skill">Agile/Scrum</div>
-              <div class="skills__skill">Technial Leadership</div>
-              <div class="skills__skill">Project Management</div>
-
-              <div class="skills__skill">Problem Solving</div>
-              <div class="skills__skill">Team Player</div>
-            </div>
-          </div>
-        </div>
+  <!-- CONTACT -->
+  <section class="section" id="contact" style="border-bottom:none;">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-sub">Whether you're looking for a Unity developer, technical lead, or someone to help bring your next game to life, I'd be happy to hear from you.</p>
       </div>
-    </section>
-    <footer class="main-footer">
-      <div class="main-container">
-        <div class="main-footer__upper">
-          <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
-            <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mohshah/">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="http://itch.io/mohshah">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/itch.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="https://www.instagram.com/mohammadshahriariii">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="https://t.me/mohammad_shahriari">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/telegram.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="https://medium.com/@mo-shah">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/medium.png"
-                  alt="icon"
-                />
-              </a>
-            </div>
+      <a class="btn btn-primary" href="mailto:moh.shah96@gmail.com">Email Me →</a>
+    </div>
+  </section>
 
-          </div>
-          <!--
-          <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">Footer</h4>
-            <p class="main-footer__short-desc">
-              Well, what should I write here? I just wrote everything I wanted in the top sections.
-              Maybe someday I fill-up this blank section too.
-            </p>
-          </div>
-          -->
-        </div>
+  <div id="site-footer"></div>
 
-        <div class="main-footer__lower">
-          &copy; Thanks to this guy:
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
-          for sharing this cool open-source project.
-        </div>
-      </div>
-    </footer>
-
-    <script src="./index.js"></script>
-  </body>
+  <script src="assets/js/projects.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
