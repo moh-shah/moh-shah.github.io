@@ -70,10 +70,10 @@ const PROJECTS = [
       "Core team: 1 Game Designer/Co-Founder and myself as Technical Lead and Programmer, with 2 Technical Artists, 1 UI Artist, and 1 Cinematic Artist contributing.",
     ],
     highlights: [
+      "Managed the team, led technical decisions, communicated directly with the PM at Supercent, and contributed creative assets through soft launch",
       "Owned virtually every technical aspect: gameplay programming, combat system, enemy AI, tutorial system, third-party SDK integrations, architecture, and mobile performance optimization",
       "Built and maintained the build pipelines and handled ongoing debugging/maintenance",
-      "Beyond programming: managed the team, led technical decisions, communicated directly with the PM at Supercent, and contributed creative assets through soft launch",
-      "Passed multiple publisher evaluations across five production iterations",
+      "The game passed multiple publisher evaluations across five production iterations",
     ],
     gallery: ["assets/img/upside_2.jpg"],
     links: {
